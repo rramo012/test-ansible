@@ -1,4 +1,9 @@
 ---
+- dependencies:
+  - src: https://github.com/cloudalchemy/ansible-prometheus.git
+    scm: git
+    version: master
+    name: cloudalchemy.prometheus
 - hosts: all
   roles:
   - cloudalchemy.prometheus
@@ -9,8 +14,3 @@
         - localhost:9100
         labels:
           env: demosite
-- dependencies:
-  - src: https://github.com/cloudalchemy/ansible-prometheus.git
-    scm: git
-    version: master
-    name: cloudalchemy.prometheus
