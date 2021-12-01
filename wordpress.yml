@@ -1,4 +1,4 @@
-- hosts: wordpress_ultrastack
+- hosts: all
   roles:
     - role: inmotionhosting.apache
     - role: inmotionhosting.mysql
