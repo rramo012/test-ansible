@@ -1,0 +1,9 @@
+- hosts: wordpress_ultrastack
+  roles:
+    - role: inmotionhosting.apache
+    - role: inmotionhosting.mysql
+    - role: inmotionhosting.php_fpm
+    - role: inmotionhosting.wordpress
+    - role: inmotionhosting.wordpress_ultrastack
+      vars:
+        use_ultrastack: true
